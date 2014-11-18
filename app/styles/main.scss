@@ -1,0 +1,169 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+body{
+  background-color: #2A2A2A;
+}
+#startup{
+  @include outer-container;
+  text-align: center;
+  font-family: Playball;
+}
+.login-form{
+  margin-top: 20px;
+  @include shift(3);
+  @include span-columns(6);
+  height: 400px;
+  background-color: #555555;
+  border-radius: 10px;
+  color: white;
+  border: solid white 5px;
+  text-align: center;
+  input{
+    padding: 10px;
+    border-radius: 10px;
+  }
+  button{
+    background-color: #2A2A2A;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    &:hover{
+      background-color: #555555;
+      color: black;
+    }
+  }
+}
+.signup-form{
+  margin-top: 20px;
+  @include shift(3);
+  @include span-columns(6);
+  height: 400px;
+  background-color: #555555;
+  border-radius: 10px;
+  border: solid white 5px;
+  color: white;
+  input{
+    padding: 10px;
+    border-radius: 10px;
+  }
+  button{
+    background-color: #2A2A2A;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    &:hover{
+      background-color: #555555;
+      color: black;
+    }
+  }
+}
+
+header{
+  text-align: center;
+  color: white;
+  @media screen and (max-width: 800px){
+      text-align: left;
+      margin-top: -40px;
+      h2{
+        display: none;
+      }
+  }
+}
+
+#GM-block{
+  float: right;
+  width: 50%;
+  margin-right: 100px;
+  height: 200px;
+  border: solid 5px white;
+  color: white;
+  h3{
+    text-align: center;
+  }
+  p{
+    margin-left: 10px;
+    a{
+      text-decoration: none;
+      color: yellow;
+    }
+  }
+  @media screen and (max-width: 800px){
+    float: left;
+    position: absolute;
+      bottom: 20px;
+    width: 100%;
+  }
+}
+
+aside{
+  nav{
+    float: left;
+    height: 80%;
+    position: absolute;
+      bottom: 10px;
+    width: 300px;
+    border: solid white 5px;
+    @include outer-container;
+    @media screen and (max-width: 800px){
+      height: 200px;
+      width: 100%;
+      position: absolute;
+        top: 130px;
+    }
+    a{
+      margin: 5px;
+      padding: 10px;
+      text-align: center;
+      @include span-columns(5.5);
+      color: white;
+      text-decoration: none;
+      border: solid white 4px;
+      border-radius: 50px;
+      &:hover{
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+h1{
+  color: white;
+  font-size: 50px;
+}
+
+#account-finish{
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+  width: 400px;
+  height: 500px;
+  border: solid white 5px;
+  text-align: center;
+  .label-box{
+    margin: 20px;
+    padding: 20px;
+    border: solid white 5px;
+    border-radius: 20px;
+    background-color: grey;
+  }
+  button{
+    margin-top: 10px;
+    @include button(shiny);
+  }
+}
+#back{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}

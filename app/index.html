@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Fantasy GM</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+  <div class="container"></div>
+
+  <script id="signup-template" type="text/template">
+    <section id="startup">
+      <form class="signup-form">
+        <h3>Sign Up</h3>
+        <div class="error" style="display:none"></div>
+        <h4>Please enter your username</h4>
+        <input type="text" id="signup-username" placeholder="Username" />
+        <h4>Please enter your password</h4>
+        <input type="password" id="signup-password" placeholder="Password" /></br>
+        <button type="submit">Register</button>
+        <a href="#/login"><h2>Not a new user?</h2x></a>
+      </form>
+    </section>
+  </script>
+
+  <script id="login-template" type="text/template">
+    <form class="login-form">
+      <h3>Log In</h3>
+      <div class="error" style="display:none"></div>
+      <h4>Please enter your username</h4>
+      <input type="text" id="login-username" placeholder="Username" />
+      <h4>Please enter your password</h4>
+      <input type="password" id="login-password" placeholder="Password" /></br>
+      <button type="submit">Fantasy Time</button>
+    </form>
+  </script>
+
+  <script id="home-template" type="text/template">
+    <header id="header">
+    </header>
+    <section id="GM-block">
+      <h3>About</h3>
+      <p>Fantasy - GM is a non-profit corporation whose mission is to provide advice and helpful strategies in order for individuals to succeed with their fantasy team</p>
+      <p>Click <a href="#/account">here</a> to start your Fantasy - GM career today.</p>
+    </section>
+    <aside>
+      <nav>
+        <a href="#/home">Home</a>
+        <a href="#/request">Service</a>
+        <a href="#/contact">Contact</a>
+        <a href="#/information">Information</a>
+      </nav>
+    </aside>
+    <footer>
+    </footer>
+  </script>
+
+  <script id="account-template" type="text/template">
+  <div id="back"><a href="#/home"><</a></div>
+  <section id="account-finish">
+    <form>
+      <h4>Submit Fantasy team for Service</h4>
+      <div class="label-box"><label>Fantasy Website:</label>
+      <input id="web-url" type="text" placeholder="Website URL"/></br></div>
+      <div class="label-box"><label>Account Username</label>
+      <input id="account-username" type="text" placeholder="Username"/></br></div>
+      <div class="label-box"><label>Account Password</label>
+      <input id="account-password" type="text" placeholder="Password"/></br></div>
+      <div class="label-box"><label>Email</label>
+      <input id="account-email" type="text" placeholder="Email"/></div>
+      <button id="account-submit">Submit</button>
+    </form>
+  </section>
+  </script>
+
+
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
